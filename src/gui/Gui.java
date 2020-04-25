@@ -1,9 +1,7 @@
 package gui;
 
-
 import actions.KeyHandler;
-
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class Gui {
     JFrame jf;
@@ -13,10 +11,6 @@ public class Gui {
     public static int xoff =130;
     public static int yoff = 20;
 
-
-    /**
-     * Creates the game field
-     */
     public void createField(){
         jf = new JFrame("Snake");
         jf.setSize(width, height);
@@ -26,7 +20,7 @@ public class Gui {
         jf.setLayout(null);
         jf.setResizable(false);
 
-        jf.addKeyListener(new KeyHandler()); //hint use keyhandler from actions
+        jf.addKeyListener(new KeyHandler());
 
         d = new Draw();
         d.setBounds(0,0, width, height);
@@ -35,8 +29,5 @@ public class Gui {
 
         jf.requestFocus();
         jf.setVisible(true);
-
-
-
     }
 }

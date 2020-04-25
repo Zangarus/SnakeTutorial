@@ -1,10 +1,13 @@
 package gui;
 
-import gamelogic.Apple;
 import gamelogic.Snake;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.RenderingHints;
 
 public class Draw extends JLabel {
 
