@@ -1,5 +1,6 @@
 package gamelogic;
 
+import gui.Draw;
 import gui.Gui;
 
 import java.awt.Point;
@@ -57,8 +58,8 @@ public class Snake {
 
     public static Point positionToCoordinate(int x, int y) {
         Point p = new Point(0, 0);
-        p.x = x * 32 + Gui.xoff;
-        p.y = y * 32 + Gui.yoff;
+        p.x = x * Draw.fieldSize + Gui.xoff;
+        p.y = y * Draw.fieldSize + Gui.yoff;
         return p;
     }
 }

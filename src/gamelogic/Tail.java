@@ -2,8 +2,8 @@ package gamelogic;
 
 public class Tail {
     //start own code
-    int x;
-    int y;
+    private int x;
+    private int y;
     //end own code
 
     boolean wait = true;
@@ -37,7 +37,5 @@ public class Tail {
     public void setWait(boolean wait) {
         this.wait = wait;
     }
-
     //end own code
-
 }

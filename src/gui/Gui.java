@@ -4,15 +4,14 @@ import actions.KeyHandler;
 import javax.swing.JFrame;
 
 public class Gui {
-    JFrame jf;
-    Draw d;
+
     public static int height = 800;
     public static int width = 800;
     public static int xoff =130;
     public static int yoff = 20;
 
-    public void createField(){
-        jf = new JFrame("Snake");
+    public void createField() {
+        JFrame jf = new JFrame("Snake");
         jf.setSize(width, height);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -22,7 +21,7 @@ public class Gui {
 
         jf.addKeyListener(new KeyHandler());
 
-        d = new Draw();
+        Draw d = new Draw();
         d.setBounds(0,0, width, height);
         d.setVisible(true);
         jf.add(d);

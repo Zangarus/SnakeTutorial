@@ -2,9 +2,9 @@ package gamelogic;
 
 public class Head {
 
-    int x;
-    int y;
-    Direction dir = Direction.RIGHT;
+    private int x;
+    private int y;
+    private Direction dir = Direction.RIGHT;
 
     public Head(int x, int y) {
         this.x = x;
